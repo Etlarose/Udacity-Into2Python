@@ -9,7 +9,7 @@ current = 1
 
 # write your while loop here
 while current < number and current > 0:
-    #sanit test print(current)
+    #sanity test print(current)
     # multiply the product so far by the current number
     product = product * (current + 1) 
     current += 1
