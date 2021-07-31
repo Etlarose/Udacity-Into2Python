@@ -6,6 +6,7 @@ product = 1
 
 # write your for loop here
 for i in range(1, number):
+    #sanity test print(product)
     product = product * (i + 1)
 
 
