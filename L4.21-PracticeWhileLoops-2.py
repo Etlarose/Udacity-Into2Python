@@ -5,8 +5,9 @@ number = 6
 product = 1
 
 # write your for loop here
-for i in range(1, number):
-    product = product * (i + 1)
+# calculate factorial of number with a for loop
+for num in range(2, number + 1):
+    product *= num
 
 
 # print the factorial of number
