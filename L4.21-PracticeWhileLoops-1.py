@@ -8,10 +8,10 @@ product = 1
 current = 1
 
 # write your while loop here
-
+while current < number and current > 0:
     # multiply the product so far by the current number
-    
-    
+    product = product * (current + 1) 
+    current += 1
     # increment current with each iteration until it reaches number
 
 
