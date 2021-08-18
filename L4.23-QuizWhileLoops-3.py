@@ -1,17 +1,15 @@
-limit = 50
-nearest_square = 0
-x = 1
-break_num = 0
-# write your while loop here
-while break_num < limit:
-    break_num = x * x
-    if break_num > limit:
-        #print(nearest_square)
-        break
-    # print(nearest_square)
-    else:
-        nearest_square = x * x
-        x += 1
-        #print(x)
+start_num = 5
+end_num = 100
+count_by = 2
 
-print(nearest_square)
+if start_num > end_num:
+    result = "Oops! Looks like your start value is greater than the end value. Please try again."
+
+else:
+    break_num = start_num
+    while break_num < end_num:
+        break_num += count_by
+
+    result = break_num
+
+print(result)
