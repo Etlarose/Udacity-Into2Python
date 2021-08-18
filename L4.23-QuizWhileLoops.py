@@ -11,22 +11,13 @@
 # it was time to stop looping. It is the case that break_num should be a number
 # that is the first number larger than end_num.
 
-start_num = 0#provide some start number
-end_num = 10#provide some end number that you stop when you hit
-count_by = 1#provide some number to count by
-break_num = start_num + 1
+start_num = 5
+end_num = 100
+count_by = 2
 
-# write a while loop that uses break_num as the ongoing number to
-#   check against end_num
-while True:
-    if break_num <= end_num:
-        # sanity check print("Break ", break_num)
-        # sanity check print("Start ", start_num)
-        break_num += count_by
-        print("New Break ", break_num)
-    else:
-        break
-
+break_num = start_num
+while break_num < end_num:
+    break_num += count_by
 
 print(break_num)
 
