@@ -4,10 +4,8 @@ z_coord = [4, 16, -6, -42, 3, -6, 23, -1]
 labels = ["F", "J", "A", "Q", "Y", "B", "W", "X"]
 
 points = []
-# write your for loop here
-for label, x, y, z in zip(labels, x_coord, y_coord, z_coord):
-    points.append("{}: {}, {}, {}".format(label, x, y, z))
-     #print("{}: {}".format(letter, num))
+for point in zip(labels, x_coord, y_coord, z_coord):
+    points.append("{}: {}, {}, {}".format(*point))
 
 for point in points:
     print(point)
