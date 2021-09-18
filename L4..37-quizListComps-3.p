@@ -5,14 +5,6 @@ scores = {
              "Jerry Smith": 23,
              "Beth Smith": 98
           }
-#print("Iterating through keys:")
-#for key in scores:
-    #print(key)
 
-#print("\nIterating through keys and values:")
-#for key, value in scores.items():
-    #print("Actor: {}    Role: {}".format(key, value))
-
-
-passed = [key for key, value in scores.items() if value >= 65]# write your list comprehension here
+passed = [name for name, score in scores.items() if score >= 65]
 print(passed)
